@@ -1,0 +1,95 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+   background:url("https://images.unsplash.com/photo-1611996575749-79a3a250f948?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 90%;
+   height: 90vh;
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 1s ease;
+}
+body.loaded {
+    opacity: 1; /* Set opacity to 1 when loaded */
+}
+body.loaded #container {
+    transform: translateY(0);
+    opacity: 1;
+    
+}
+#container {
+    max-width: fit-content;
+   margin: auto;
+    padding-top: 5rem;
+}
+
+.question {
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 1.4rem;
+}
+
+.options {
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option {
+    
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+.option:hover {
+    border-top: 2px solid red;
+    background-color: #000;
+    color:#fff;
+}
+
+#result {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+
+button{
+    width: 100px;
+    height: 30px;
+    
+    text-transform: capitalize;
+    background-color: #000;
+    color: #fff;
+    border: transparent;
+    border-radius: 6px;
+}
+
+button:hover{
+    background-color: green;
+    color: #000;
+    cursor: pointer;
+}
+
+@media (max-width: 375px) {
+    body {
+        width: fit-content;
+        height: 90vh;
+    }
+
+    #container {
+        width: fit-content;
+    }
+    
+}
+
+
+  
